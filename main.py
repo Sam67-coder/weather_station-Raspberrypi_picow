@@ -132,7 +132,7 @@ def sync_if_online():
         lcd_write("WiFi Connected!")
         time.sleep(2)
         try:
-            url = "https://timeapi.io/api/v1/timezone/zone?timeZone=America%2FChicago"
+            url = "URL_FOR_TIME_ZONE"
             headers = {"User-Agent": "Mozilla/5.0 (RaspberryPiPicoW)"}
             res = urequests.get(url, headers=headers)
             data = res.json()
